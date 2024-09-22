@@ -6,14 +6,14 @@ using UnityEngine;
 
 public class Hutero : MonoBehaviour{
 
-    public event Action< Collision > onCollisionEnter;
+    public GameManager gameManager;
 
     private void OnCollisionEnter( Collision collision ){
-        if( onCollisionEnter != null ){
-            onCollisionEnter( collision );
-        }
+        gameManager.onCollisionEnterUtero( collision );
     }
 
-    private void OnCollisionStay( Collision collision ){
+    private void OnCollisionExit( Collision collision ){
+        gameManager.onCollisionExitUtero( collision );
     }
+
 }

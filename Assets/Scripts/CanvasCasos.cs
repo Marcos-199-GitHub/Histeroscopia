@@ -5,6 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class CanvasCasos : MonoBehaviour{
     public Cortina cortina;
+    public GameObject errorMessage;
+    public GameObject molestandoMessage;
+    
+    
 
     private bool loaded = false;
 
@@ -23,6 +27,23 @@ public class CanvasCasos : MonoBehaviour{
 
     public void irAMenu(){
         cortina.cerrarCortina();
+    }
+    
+    
+    public void showError(){
+        errorMessage.SetActive( true );
+    }
+    
+    public void hideError(){
+        errorMessage.SetActive( false );
+    }
+    
+    public void showMolestando(){
+        molestandoMessage.SetActive( true );
+    }
+    
+    public void hideMolestando(){
+        molestandoMessage.SetActive( false );
     }
 
 }
