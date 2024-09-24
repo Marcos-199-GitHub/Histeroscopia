@@ -1284,47 +1284,47 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 5d2053f68b26c164fbb50edb04cf64f2,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -24.9
+      value: -16.7
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5d2053f68b26c164fbb50edb04cf64f2,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -14.7
+      value: -16.9
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5d2053f68b26c164fbb50edb04cf64f2,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.1
+      value: 12.5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5d2053f68b26c164fbb50edb04cf64f2,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.66325223
+      value: 0.47875977
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5d2053f68b26c164fbb50edb04cf64f2,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.6232821
+      value: -0.5337818
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5d2053f68b26c164fbb50edb04cf64f2,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.24514607
+      value: -0.52037394
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5d2053f68b26c164fbb50edb04cf64f2,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.33394518
+      value: -0.46376404
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5d2053f68b26c164fbb50edb04cf64f2,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -82.103
+      value: -96.4
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5d2053f68b26c164fbb50edb04cf64f2,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 41.533
+      value: 1.63
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5d2053f68b26c164fbb50edb04cf64f2,
         type: 3}
@@ -6682,10 +6682,20 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 5838930648649505032, guid: 0b6e2f47e34622c4fba25c12479143ad,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7637688385133517165, guid: 0b6e2f47e34622c4fba25c12479143ad,
         type: 3}
       propertyPath: m_Name
       value: CanvasCasos
+      objectReference: {fileID: 0}
+    - target: {fileID: 8152941057596259716, guid: 0b6e2f47e34622c4fba25c12479143ad,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
