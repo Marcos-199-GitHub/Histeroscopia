@@ -4,8 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class CanvasCasos : MonoBehaviour
-{
+public class CanvasCasos : MonoBehaviour{
     public Cortina cortina;
     public GameObject errorMessage;
     public GameObject molestandoMessage;
@@ -16,18 +15,15 @@ public class CanvasCasos : MonoBehaviour
 
     private bool loaded = false;
 
-    private void Start()
-    {
+    private void Start(){
         cortina.gameObject.SetActive(true);
     }
 
-    private void Update()
-    {
-        textResultado.text = "Tiempo Simulado: " + tiempoSimulado/60 + " minutos \n\n" +
+    private void Update(){
+        textResultado.text = "Tiempo Simulado: " + tiempoSimulado / 60 + " minutos \n\n" +
                              "Conteo Molestias: " + conteoMolestias + "\n\n" +
                              "Tiempo Molestias: " + tiempoMolestias + " segundos";
-        if (cortina.abierta || cortina.ready == false || loaded)
-        {
+        if (cortina.abierta || cortina.ready == false || loaded){
             return;
         }
 
@@ -35,29 +31,23 @@ public class CanvasCasos : MonoBehaviour
         loaded = true;
     }
 
-    public void irAMenu()
-    {
+    public void irAMenu(){
         cortina.cerrarCortina();
     }
 
-
-    public void showError()
-    {
+    public void showError(){
         errorMessage.SetActive(true);
     }
 
-    public void hideError()
-    {
+    public void hideError(){
         errorMessage.SetActive(false);
     }
 
-    public void showMolestando()
-    {
+    public void showMolestando(){
         molestandoMessage.SetActive(true);
     }
 
-    public void hideMolestando()
-    {
+    public void hideMolestando(){
         molestandoMessage.SetActive(false);
     }
 }
