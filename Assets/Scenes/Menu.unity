@@ -6650,7 +6650,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 1956234315}
   abierta: 1
-  velocidad: 0.01
+  velocidad: 1
   ready: 0
 --- !u!1 &1976745754
 GameObject:

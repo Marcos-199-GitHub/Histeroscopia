@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1152,7 +1152,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1517936427
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1350,7 +1350,14 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 31d849fab37a7684c985c246315975e1, type: 2}
+      objectReference: {fileID: 5358544495761568220, guid: b532acbf383b4504ab84c56f9bff6252,
+        type: 3}
+    - target: {fileID: -5754084199372789682, guid: 5d2053f68b26c164fbb50edb04cf64f2,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 2984339072968298625, guid: b532acbf383b4504ab84c56f9bff6252,
+        type: 3}
     - target: {fileID: 919132149155446097, guid: 5d2053f68b26c164fbb50edb04cf64f2,
         type: 3}
       propertyPath: m_Name
