@@ -9,6 +9,7 @@ public class CanvasCasos : MonoBehaviour{
     public GameObject errorMessage;
     public GameObject molestandoMessage;
     public TextMeshProUGUI textResultado;
+    public TextMeshProUGUI contadorTexto;
     public float tiempoSimulado = 0;
     public int conteoMolestias = 0;
     public float tiempoMolestias = 0;
@@ -20,9 +21,21 @@ public class CanvasCasos : MonoBehaviour{
     }
 
     private void Update(){
-        textResultado.text = "Tiempo Simulado: " + tiempoSimulado / 60 + " minutos \n\n" +
+        int horas = (int)(tiempoSimulado / 3600);
+        int minutos = (int)((tiempoSimulado % 3600) / 60);
+        int segundos = (int)(tiempoSimulado % 60);
+
+        int horasMolestias = (int)(tiempoMolestias / 3600);
+        int minutosMolestias = (int)((tiempoMolestias % 3600) / 60);
+        int segundosMolestias = (int)(tiempoMolestias % 60);
+
+        textResultado.text = "Tiempo Simulado: " + horas.ToString("00") + ":" + minutos.ToString("00") + ":" + segundos.ToString("00") +
+                             "\n\n" +
                              "Conteo Molestias: " + conteoMolestias + "\n\n" +
-                             "Tiempo Molestias: " + tiempoMolestias + " segundos";
+                             "Tiempo Molestias: " + horasMolestias.ToString("00") + ":" + minutosMolestias.ToString("00") + ":" +
+                             segundosMolestias.ToString("00");
+
+        contadorTexto.text = horas.ToString("00") + ":" + minutos.ToString("00") + ":" + segundos.ToString("00");
         if (cortina.abierta || cortina.ready == false || loaded){
             return;
         }

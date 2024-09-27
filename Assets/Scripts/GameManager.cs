@@ -11,11 +11,11 @@ public class GameManager : MonoBehaviour{
 
     public int conteoMolestando = 0;
     public AudioSource audioMolestando;
-    public AudioSource audioMolestando2;
 
     private bool isMolestando = false;
 
     private void Start(){
+        
         if (hapticPlugin.ModelType == "Not Connected" || hapticPlugin.SerialNumber == "Not Connected"){
             hapticPlugin.UpdateDeviceInformation();
         }
